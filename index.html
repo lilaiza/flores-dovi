@@ -8,6 +8,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="description" content="Un hermoso mandala de flores con animaciones">
     <meta name="theme-color" content="#ffc0cb">
+    <script>
+        // Verificar autorización inmediatamente
+        if (!localStorage.getItem('autorizado')) {
+            window.location.replace('login.html');
+        }
+    </script>
     <link rel="stylesheet" href="styles_new.css">
     <link rel="preload" as="image" href="images/Ramo.webp">
     <link rel="preload" as="image" href="images/tulipan-rosa.png">
@@ -15,12 +21,6 @@
     <link rel="preload" as="image" href="images/rosa-roja.png">
 </head>
 <body>
-    <script>
-        // Verificar autorización
-        if (!localStorage.getItem('autorizado')) {
-            window.location.href = 'login.html';
-        }
-    </script>
     <div class="container">
         <div class="mandala">
             <!-- Círculo central -->
