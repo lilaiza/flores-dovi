@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>💐 Un regalo especial 💐</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #ffebf3, #ffc0cb);
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+            text-align: center;
+            max-width: 90%;
+            width: 320px;
+        }
+        h1 {
+            color: #ff69b4;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ffb6c1;
+            border-radius: 10px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        input:focus {
+            border-color: #ff69b4;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.2);
+        }
+        button {
+            background: linear-gradient(to right, #ff69b4, #ffb6c1);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            width: 100%;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        }
+        .error {
+            color: #ff4466;
+            margin-top: 10px;
+            display: none;
+        }
+        .flores {
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="flores">🌸 💐 🌺</div>
+        <h1>Tengo algo especial para ti</h1>
+        <input type="password" id="password" placeholder="Escribe la contraseña..." autocomplete="off">
+        <button onclick="verificarPassword()">Ver regalo</button>
+        <p id="error" class="error">Contraseña incorrecta 💔</p>
+    </div>
+    <script>
+        function verificarPassword() {
+            const password = document.getElementById('password').value;
+            const error = document.getElementById('error');
+            // La contraseña es "tedovi" (puedes cambiarla)
+            if (password.toLowerCase() === 'tedovi') {
+                localStorage.setItem('autorizado', 'true');
+                window.location.href = 'index.html';
+            } else {
+                error.style.display = 'block';
+                document.getElementById('password').value = '';
+            }
+        }
+
+        // Permitir enviar con Enter
+        document.getElementById('password').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                verificarPassword();
+            }
+        });
+    </script>
+</body>
+</html> 

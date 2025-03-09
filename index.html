@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mandala de Flores para Dovi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Un hermoso mandala de flores con animaciones">
+    <meta name="theme-color" content="#ffc0cb">
+    <link rel="stylesheet" href="styles_new.css">
+    <link rel="preload" as="image" href="images/ramo.webp">
+    <link rel="preload" as="image" href="images/tulipan-rosa.png">
+    <link rel="preload" as="image" href="images/rosa-rosa.png">
+    <link rel="preload" as="image" href="images/rosa-roja.png">
+</head>
+<body>
+    <script>
+        // Verificar autorización
+        if (!localStorage.getItem('autorizado')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+    <div class="container">
+        <div class="mandala">
+            <!-- Círculo central -->
+            <div class="centro">
+                <div class="flor ramo" id="flor-centro">
+                    <img src="images/ramo.webp" alt="Ramo Central">
+                </div>
+            </div>
+
+            <!-- Primer anillo (más cercano al centro) -->
+            <div class="anillo anillo-1">
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-roja.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+            </div>
+
+            <!-- Segundo anillo -->
+            <div class="anillo anillo-2">
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor orquidea"><img src="images/orquidea.png" alt="Orquídea"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita-rosa.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor orquidea"><img src="images/orquidea.png" alt="Orquídea"></div>
+            </div>
+
+            <!-- Tercer anillo -->
+            <div class="anillo anillo-3">
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-roja.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita-rosa.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-roja.png" alt="Rosa"></div>
+            </div>
+
+            <!-- Cuarto anillo -->
+            <div class="anillo anillo-4">
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-roja.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita-rosa.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita.png" alt="Margarita"></div>
+            </div>
+
+            <!-- Quinto anillo -->
+            <div class="anillo anillo-5">
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-roja.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita-rosa.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-roja.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+            </div>
+
+            <!-- Sexto anillo (exterior) -->
+            <div class="anillo anillo-6">
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-roja.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita-rosa.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-rosa.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita.png" alt="Margarita"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor rosa"><img src="images/rosa-roja.png" alt="Rosa"></div>
+                <div class="flor tulipan"><img src="images/tulipan-rosa.png" alt="Tulipán"></div>
+                <div class="flor margarita"><img src="images/margarita-rosa.png" alt="Margarita"></div>
+            </div>
+
+            <!-- Hojas decorativas -->
+            <div class="hojas-circulo">
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+                <div class="hoja"></div>
+            </div>
+
+            <!-- Brillos -->
+            <div class="brillos">
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+                <div class="brillo"></div>
+            </div>
+        </div>
+        <div class="mensaje">Para Dovi ❤️</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
